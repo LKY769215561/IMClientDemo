@@ -80,48 +80,26 @@ class ViewController: UIViewController {
 extension ViewController : GCDAsyncSocketDelegate{
 
     // 与服务器连接成功
-    func socket(_ sock: GCDAsyncSocket!, didConnectToHost host: String!, port: UInt16) {
+    func socket(_ clientSock: GCDAsyncSocket!, didConnectToHost host: String!, port: UInt16) {
         
         stateLable.text = "连接中.."
         stateLable.backgroundColor = UIColor.green
           //  保证能接收到数据
-        sock.readData(withTimeout: -1, tag: 0)
+        clientSock.readData(withTimeout: -1, tag: 0)
         
     }
     
     // 接收服务器响应的数据
-    func socket(_ sock: GCDAsyncSocket!, didRead data: Data!, withTag tag: Int) {
+    func socket(_ clientSock: GCDAsyncSocket!, didRead data: Data!, withTag tag: Int) {
        
-        var totalSize = 0
-        var commandId = 0
-        var result = 0
+
+        let responStr = JZChatMessageTool.responServerData(serverData: data)
         
         
-        (data as NSData).getBytes(&totalSize, range: NSMakeRange(0, 4))
-        (data as NSData).getBytes(&commandId, range: NSMakeRange(4, 4))
-        (data as NSData).getBytes(&result, range: NSMakeRange(8, 4))
-        
-        
-        var str = ""
-        
-        if commandId == 0x00000001 {
-            str = "图片"
-        }else if commandId == 0x00000002{
-            str = "文字"
-        }
-        
-        if result == 1
-        {
-            str.append("上传成功")
-        }else
-        {
-           str.append("上传失败")
-        }
-        
-        print("\(str)")
+        print("\(responStr)")
         
     
-        clientSocket.readData(withTimeout: -1, tag: 0)
+        clientSock.readData(withTimeout: -1, tag: 0)
         
     }
     

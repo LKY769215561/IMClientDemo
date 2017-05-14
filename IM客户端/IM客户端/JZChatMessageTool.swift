@@ -58,6 +58,41 @@ class JZChatMessageTool {
         totalDataM.append(sendData)
         client.write(totalDataM, withTimeout: -1, tag: 0)
     }
+    
+    class func responServerData(serverData : Data) -> String {
+        
+        
+        var totalSize = 0
+        var commandId = 0
+        var result = 0
+        
+        
+        (serverData as NSData).getBytes(&totalSize, range: NSMakeRange(0, 4))
+        (serverData as NSData).getBytes(&commandId, range: NSMakeRange(4, 4))
+        (serverData as NSData).getBytes(&result, range: NSMakeRange(8, 4))
+        
+        
+        var responStr = ""
+        
+        if commandId == 0x00000001 {
+            responStr = "图片"
+        }else if commandId == 0x00000002{
+            responStr = "文字"
+        }
+        
+        if result == 1
+        {
+            responStr.append("上传成功")
+        }else
+        {
+            responStr.append("上传失败")
+        }
+        
+        return responStr
+        
+    }
+    
+    
 }
 
 extension JZChatMessageTool : GCDAsyncSocketDelegate{
