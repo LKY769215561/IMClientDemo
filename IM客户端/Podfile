@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'IM客户端' do
+    use_frameworks!
+
+    pod 'Chatto', '= 3.0.1'
+    pod 'ChattoAdditions', '= 3.0.1'
+
+
+
+
+end

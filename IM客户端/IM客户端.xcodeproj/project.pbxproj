@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BFE29FA9670ED1A6F76DDAF /* Pods_IM___.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E044C34A6360B3C5DBE7314 /* Pods_IM___.framework */; };
 		A1710D7E1EC2F13800973E78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710D7D1EC2F13800973E78 /* AppDelegate.swift */; };
 		A1710D801EC2F13800973E78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710D7F1EC2F13800973E78 /* ViewController.swift */; };
 		A1710D831EC2F13800973E78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1710D811EC2F13800973E78 /* Main.storyboard */; };
@@ -15,9 +16,13 @@
 		A1710D941EC2F24F00973E78 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A1710D931EC2F24F00973E78 /* GCDAsyncSocket.m */; };
 		A1710D981EC30A6800973E78 /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A1710D971EC30A6800973E78 /* testImage.png */; };
 		A1710D9A1EC30C2000973E78 /* JZChatMessageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710D991EC30C2000973E78 /* JZChatMessageTool.swift */; };
+		A18A7A2F1ECA9362009AEF6A /* JZLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18A7A2E1ECA9362009AEF6A /* JZLoginViewController.swift */; };
+		A18A7A331ECA9923009AEF6A /* JZLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18A7A321ECA9923009AEF6A /* JZLoginViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DFC052197464D1A3977E8C8 /* Pods-IM客户端.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM客户端.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IM客户端/Pods-IM客户端.debug.xcconfig"; sourceTree = "<group>"; };
+		2E044C34A6360B3C5DBE7314 /* Pods_IM___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_IM___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1710D7A1EC2F13800973E78 /* IM客户端.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IM客户端.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1710D7D1EC2F13800973E78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1710D7F1EC2F13800973E78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		A1710D961EC2FAF800973E78 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		A1710D971EC30A6800973E78 /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
 		A1710D991EC30C2000973E78 /* JZChatMessageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZChatMessageTool.swift; sourceTree = "<group>"; };
+		A18A7A2E1ECA9362009AEF6A /* JZLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZLoginViewController.swift; sourceTree = "<group>"; };
+		A18A7A321ECA9923009AEF6A /* JZLoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JZLoginViewController.storyboard; sourceTree = "<group>"; };
+		C138B019946BB478C41F339C /* Pods-IM客户端.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM客户端.release.xcconfig"; path = "Pods/Target Support Files/Pods-IM客户端/Pods-IM客户端.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFE29FA9670ED1A6F76DDAF /* Pods_IM___.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66636CF0AE41FF731DFB7881 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E044C34A6360B3C5DBE7314 /* Pods_IM___.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1710D711EC2F13800973E78 = {
 			isa = PBXGroup;
 			children = (
 				A1710D7C1EC2F13800973E78 /* IM客户端 */,
 				A1710D7B1EC2F13800973E78 /* Products */,
+				B65575857629B9E9A74253B6 /* Pods */,
+				66636CF0AE41FF731DFB7881 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,13 +84,15 @@
 				A1710D911EC2F24F00973E78 /* TCP */,
 				A1710D7D1EC2F13800973E78 /* AppDelegate.swift */,
 				A1710D7F1EC2F13800973E78 /* ViewController.swift */,
-				A1710D971EC30A6800973E78 /* testImage.png */,
 				A1710D811EC2F13800973E78 /* Main.storyboard */,
 				A1710D841EC2F13800973E78 /* Assets.xcassets */,
 				A1710D961EC2FAF800973E78 /* BridgingHeader.h */,
 				A1710D861EC2F13800973E78 /* LaunchScreen.storyboard */,
 				A1710D891EC2F13800973E78 /* Info.plist */,
 				A1710D991EC30C2000973E78 /* JZChatMessageTool.swift */,
+				A18A7A2E1ECA9362009AEF6A /* JZLoginViewController.swift */,
+				A18A7A321ECA9923009AEF6A /* JZLoginViewController.storyboard */,
+				A1710D971EC30A6800973E78 /* testImage.png */,
 			);
 			path = "IM客户端";
 			sourceTree = "<group>";
@@ -85,6 +106,15 @@
 			path = TCP;
 			sourceTree = "<group>";
 		};
+		B65575857629B9E9A74253B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC052197464D1A3977E8C8 /* Pods-IM客户端.debug.xcconfig */,
+				C138B019946BB478C41F339C /* Pods-IM客户端.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1710D8C1EC2F13800973E78 /* Build configuration list for PBXNativeTarget "IM客户端" */;
 			buildPhases = (
+				CEA5C15E4B8017F480A04F44 /* [CP] Check Pods Manifest.lock */,
 				A1710D761EC2F13800973E78 /* Sources */,
 				A1710D771EC2F13800973E78 /* Frameworks */,
 				A1710D781EC2F13800973E78 /* Resources */,
+				7A890738610EEBD2CCFA7882 /* [CP] Embed Pods Frameworks */,
+				B790801D3BCD60C9181BB5A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,11 +180,60 @@
 				A1710D881EC2F13800973E78 /* LaunchScreen.storyboard in Resources */,
 				A1710D851EC2F13800973E78 /* Assets.xcassets in Resources */,
 				A1710D831EC2F13800973E78 /* Main.storyboard in Resources */,
+				A18A7A331ECA9923009AEF6A /* JZLoginViewController.storyboard in Resources */,
 				A1710D981EC30A6800973E78 /* testImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A890738610EEBD2CCFA7882 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IM客户端/Pods-IM客户端-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B790801D3BCD60C9181BB5A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IM客户端/Pods-IM客户端-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA5C15E4B8017F480A04F44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1710D761EC2F13800973E78 /* Sources */ = {
@@ -161,6 +243,7 @@
 				A1710D941EC2F24F00973E78 /* GCDAsyncSocket.m in Sources */,
 				A1710D9A1EC30C2000973E78 /* JZChatMessageTool.swift in Sources */,
 				A1710D801EC2F13800973E78 /* ViewController.swift in Sources */,
+				A18A7A2F1ECA9362009AEF6A /* JZLoginViewController.swift in Sources */,
 				A1710D7E1EC2F13800973E78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +365,11 @@
 		};
 		A1710D8D1EC2F13800973E78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DFC052197464D1A3977E8C8 /* Pods-IM客户端.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "IM客户端/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jiuzhangTest-001.IM---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,9 +380,11 @@
 		};
 		A1710D8E1EC2F13800973E78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C138B019946BB478C41F339C /* Pods-IM客户端.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "IM客户端/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jiuzhangTest-001.IM---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
