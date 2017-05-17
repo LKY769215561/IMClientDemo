@@ -137,7 +137,7 @@ class JZLoginViewController: UIViewController {
         let  initialCount = 0
         let  pageSize = 50
         
-        var dataSource: FakeDataSource!
+        var dataSource: FakeDataSource?
 //        if segue.identifier == "0 messages" {
 //            initialCount = 0
 //        } else if segue.identifier == "2 messages" {
@@ -161,15 +161,20 @@ class JZLoginViewController: UIViewController {
 //            return nil
 //            }()!
         
-        let chat2Controller = DemoChatViewController()
+        let chatController = DemoChatViewController()
         
         if dataSource == nil {
             dataSource = FakeDataSource(count: initialCount, pageSize: pageSize)
         }
-        chat2Controller.dataSource = dataSource
-        chat2Controller.messageSender = dataSource.messageSender
+        
+        guard let dataSource2 = dataSource else {
+            return
+        }
+        
+        chatController.dataSource = dataSource2
+        chatController.messageSender = dataSource2.messageSender
 
-        navigationController?.pushViewController(chat2Controller, animated: true)
+        navigationController?.pushViewController(chatController, animated: true)
         
     }
     

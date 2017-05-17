@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0BFE29FA9670ED1A6F76DDAF /* Pods_IM___.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E044C34A6360B3C5DBE7314 /* Pods_IM___.framework */; };
-		A12B829D1ECAF3C900D22665 /* JZClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B829C1ECAF3C900D22665 /* JZClientManager.swift */; };
-		A12B829F1ECAF73A00D22665 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B829E1ECAF73A00D22665 /* NotificationName.swift */; };
-		A12B82A11ECAF94100D22665 /* JZConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B82A01ECAF94100D22665 /* JZConversationViewController.swift */; };
-		A12B82A31ECAF9AA00D22665 /* JZNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B82A21ECAF9AA00D22665 /* JZNavigationViewController.swift */; };
 		A16F26241ECBDF88009AD2AF /* DemoPhotoMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F26141ECBDF88009AD2AF /* DemoPhotoMessageHandler.swift */; };
 		A16F26251ECBDF88009AD2AF /* DemoPhotoMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F26151ECBDF88009AD2AF /* DemoPhotoMessageModel.swift */; };
 		A16F26261ECBDF88009AD2AF /* DemoPhotoMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F26161ECBDF88009AD2AF /* DemoPhotoMessageViewModel.swift */; };
@@ -32,25 +28,25 @@
 		A16F263A1ECBE0E0009AD2AF /* FakeMessageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F26391ECBE0E0009AD2AF /* FakeMessageFactory.swift */; };
 		A16F263C1ECBE0F6009AD2AF /* ChatItemsDemoDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F263B1ECBE0F6009AD2AF /* ChatItemsDemoDecorator.swift */; };
 		A16F263E1ECBE165009AD2AF /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F263D1ECBE165009AD2AF /* BaseMessageCollectionViewCellAvatarStyle.swift */; };
-		A1710D7E1EC2F13800973E78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710D7D1EC2F13800973E78 /* AppDelegate.swift */; };
-		A1710D801EC2F13800973E78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710D7F1EC2F13800973E78 /* ViewController.swift */; };
+		A16F26451ECBE92D009AD2AF /* JZChatMessageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F26401ECBE92D009AD2AF /* JZChatMessageTool.swift */; };
+		A16F26461ECBE92D009AD2AF /* JZClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F26411ECBE92D009AD2AF /* JZClientManager.swift */; };
+		A16F26471ECBE92D009AD2AF /* JZLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F26431ECBE92D009AD2AF /* JZLoginViewController.swift */; };
+		A16F26481ECBE92D009AD2AF /* JZNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F26441ECBE92D009AD2AF /* JZNavigationViewController.swift */; };
+		A16F26511ECBE983009AD2AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F264A1ECBE983009AD2AF /* AppDelegate.swift */; };
+		A16F26531ECBE983009AD2AF /* JZConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F264D1ECBE983009AD2AF /* JZConversationViewController.swift */; };
+		A16F26541ECBE983009AD2AF /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F264E1ECBE983009AD2AF /* NotificationName.swift */; };
+		A16F26561ECBE983009AD2AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F26501ECBE983009AD2AF /* ViewController.swift */; };
+		A16F265A1ECBEB04009AD2AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A16F26591ECBEB04009AD2AF /* Info.plist */; };
 		A1710D831EC2F13800973E78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1710D811EC2F13800973E78 /* Main.storyboard */; };
 		A1710D851EC2F13800973E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1710D841EC2F13800973E78 /* Assets.xcassets */; };
 		A1710D881EC2F13800973E78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1710D861EC2F13800973E78 /* LaunchScreen.storyboard */; };
 		A1710D941EC2F24F00973E78 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A1710D931EC2F24F00973E78 /* GCDAsyncSocket.m */; };
-		A1710D981EC30A6800973E78 /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A1710D971EC30A6800973E78 /* testImage.png */; };
-		A1710D9A1EC30C2000973E78 /* JZChatMessageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710D991EC30C2000973E78 /* JZChatMessageTool.swift */; };
-		A18A7A2F1ECA9362009AEF6A /* JZLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18A7A2E1ECA9362009AEF6A /* JZLoginViewController.swift */; };
 		A18A7A331ECA9923009AEF6A /* JZLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18A7A321ECA9923009AEF6A /* JZLoginViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0DFC052197464D1A3977E8C8 /* Pods-IM客户端.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM客户端.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IM客户端/Pods-IM客户端.debug.xcconfig"; sourceTree = "<group>"; };
 		2E044C34A6360B3C5DBE7314 /* Pods_IM___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_IM___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A12B829C1ECAF3C900D22665 /* JZClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZClientManager.swift; sourceTree = "<group>"; };
-		A12B829E1ECAF73A00D22665 /* NotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
-		A12B82A01ECAF94100D22665 /* JZConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZConversationViewController.swift; sourceTree = "<group>"; };
-		A12B82A21ECAF9AA00D22665 /* JZNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZNavigationViewController.swift; sourceTree = "<group>"; };
 		A16F26141ECBDF88009AD2AF /* DemoPhotoMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPhotoMessageHandler.swift; sourceTree = "<group>"; };
 		A16F26151ECBDF88009AD2AF /* DemoPhotoMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPhotoMessageModel.swift; sourceTree = "<group>"; };
 		A16F26161ECBDF88009AD2AF /* DemoPhotoMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPhotoMessageViewModel.swift; sourceTree = "<group>"; };
@@ -71,19 +67,22 @@
 		A16F26391ECBE0E0009AD2AF /* FakeMessageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeMessageFactory.swift; sourceTree = "<group>"; };
 		A16F263B1ECBE0F6009AD2AF /* ChatItemsDemoDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItemsDemoDecorator.swift; sourceTree = "<group>"; };
 		A16F263D1ECBE165009AD2AF /* BaseMessageCollectionViewCellAvatarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessageCollectionViewCellAvatarStyle.swift; sourceTree = "<group>"; };
+		A16F26401ECBE92D009AD2AF /* JZChatMessageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZChatMessageTool.swift; sourceTree = "<group>"; };
+		A16F26411ECBE92D009AD2AF /* JZClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZClientManager.swift; sourceTree = "<group>"; };
+		A16F26431ECBE92D009AD2AF /* JZLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZLoginViewController.swift; sourceTree = "<group>"; };
+		A16F26441ECBE92D009AD2AF /* JZNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZNavigationViewController.swift; sourceTree = "<group>"; };
+		A16F264A1ECBE983009AD2AF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A16F264B1ECBE983009AD2AF /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		A16F264D1ECBE983009AD2AF /* JZConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZConversationViewController.swift; sourceTree = "<group>"; };
+		A16F264E1ECBE983009AD2AF /* NotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		A16F26501ECBE983009AD2AF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A16F26591ECBEB04009AD2AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1710D7A1EC2F13800973E78 /* IM客户端.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IM客户端.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1710D7D1EC2F13800973E78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1710D7F1EC2F13800973E78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1710D821EC2F13800973E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1710D841EC2F13800973E78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1710D871EC2F13800973E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A1710D891EC2F13800973E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1710D921EC2F24F00973E78 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		A1710D931EC2F24F00973E78 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		A1710D961EC2FAF800973E78 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		A1710D971EC30A6800973E78 /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
-		A1710D991EC30C2000973E78 /* JZChatMessageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZChatMessageTool.swift; sourceTree = "<group>"; };
-		A18A7A2E1ECA9362009AEF6A /* JZLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZLoginViewController.swift; sourceTree = "<group>"; };
 		A18A7A321ECA9923009AEF6A /* JZLoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JZLoginViewController.storyboard; sourceTree = "<group>"; };
 		C138B019946BB478C41F339C /* Pods-IM客户端.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM客户端.release.xcconfig"; path = "Pods/Target Support Files/Pods-IM客户端/Pods-IM客户端.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +166,36 @@
 			path = "Time Separator";
 			sourceTree = "<group>";
 		};
+		A16F263F1ECBE92D009AD2AF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A16F26401ECBE92D009AD2AF /* JZChatMessageTool.swift */,
+				A16F26411ECBE92D009AD2AF /* JZClientManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A16F26421ECBE92D009AD2AF /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				A16F26431ECBE92D009AD2AF /* JZLoginViewController.swift */,
+				A16F26441ECBE92D009AD2AF /* JZNavigationViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		A16F26491ECBE983009AD2AF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A16F264A1ECBE983009AD2AF /* AppDelegate.swift */,
+				A16F264B1ECBE983009AD2AF /* BridgingHeader.h */,
+				A16F264D1ECBE983009AD2AF /* JZConversationViewController.swift */,
+				A16F264E1ECBE983009AD2AF /* NotificationName.swift */,
+				A16F26501ECBE983009AD2AF /* ViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		A1710D711EC2F13800973E78 = {
 			isa = PBXGroup;
 			children = (
@@ -188,23 +217,16 @@
 		A1710D7C1EC2F13800973E78 /* IM客户端 */ = {
 			isa = PBXGroup;
 			children = (
+				A16F26491ECBE983009AD2AF /* Other */,
+				A16F263F1ECBE92D009AD2AF /* Service */,
+				A16F26421ECBE92D009AD2AF /* Start */,
 				A16F26121ECBDF88009AD2AF /* Chat */,
 				A1710D911EC2F24F00973E78 /* TCP */,
-				A1710D7D1EC2F13800973E78 /* AppDelegate.swift */,
-				A1710D7F1EC2F13800973E78 /* ViewController.swift */,
 				A1710D811EC2F13800973E78 /* Main.storyboard */,
 				A1710D841EC2F13800973E78 /* Assets.xcassets */,
-				A1710D961EC2FAF800973E78 /* BridgingHeader.h */,
 				A1710D861EC2F13800973E78 /* LaunchScreen.storyboard */,
-				A1710D891EC2F13800973E78 /* Info.plist */,
-				A1710D991EC30C2000973E78 /* JZChatMessageTool.swift */,
-				A18A7A2E1ECA9362009AEF6A /* JZLoginViewController.swift */,
 				A18A7A321ECA9923009AEF6A /* JZLoginViewController.storyboard */,
-				A1710D971EC30A6800973E78 /* testImage.png */,
-				A12B829C1ECAF3C900D22665 /* JZClientManager.swift */,
-				A12B829E1ECAF73A00D22665 /* NotificationName.swift */,
-				A12B82A01ECAF94100D22665 /* JZConversationViewController.swift */,
-				A12B82A21ECAF9AA00D22665 /* JZNavigationViewController.swift */,
+				A16F26591ECBEB04009AD2AF /* Info.plist */,
 			);
 			path = "IM客户端";
 			sourceTree = "<group>";
@@ -294,7 +316,7 @@
 				A1710D831EC2F13800973E78 /* Main.storyboard in Resources */,
 				A16F26281ECBDF88009AD2AF /* SendingStatusCollectionViewCell.xib in Resources */,
 				A18A7A331ECA9923009AEF6A /* JZLoginViewController.storyboard in Resources */,
-				A1710D981EC30A6800973E78 /* testImage.png in Resources */,
+				A16F265A1ECBEB04009AD2AF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,34 +375,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16F26471ECBE92D009AD2AF /* JZLoginViewController.swift in Sources */,
 				A16F262D1ECBDF88009AD2AF /* DemoTextMessageViewModel.swift in Sources */,
 				A1710D941EC2F24F00973E78 /* GCDAsyncSocket.m in Sources */,
+				A16F26451ECBE92D009AD2AF /* JZChatMessageTool.swift in Sources */,
 				A16F262E1ECBDF88009AD2AF /* TimeSeparatorCollectionViewCell.swift in Sources */,
-				A1710D9A1EC30C2000973E78 /* JZChatMessageTool.swift in Sources */,
 				A16F262F1ECBDF88009AD2AF /* TimeSeparatorModel.swift in Sources */,
 				A16F262C1ECBDF88009AD2AF /* DemoTextMessageModel.swift in Sources */,
+				A16F26541ECBE983009AD2AF /* NotificationName.swift in Sources */,
 				A16F26241ECBDF88009AD2AF /* DemoPhotoMessageHandler.swift in Sources */,
 				A16F26341ECBDFF6009AD2AF /* DemoChatViewController.swift in Sources */,
 				A16F26321ECBDFCE009AD2AF /* FakeDataSource.swift in Sources */,
 				A16F26271ECBDF88009AD2AF /* SendingStatusCollectionViewCell.swift in Sources */,
+				A16F26461ECBE92D009AD2AF /* JZClientManager.swift in Sources */,
 				A16F263C1ECBE0F6009AD2AF /* ChatItemsDemoDecorator.swift in Sources */,
+				A16F26511ECBE983009AD2AF /* AppDelegate.swift in Sources */,
 				A16F262B1ECBDF88009AD2AF /* DemoTextMessageHandler.swift in Sources */,
+				A16F26531ECBE983009AD2AF /* JZConversationViewController.swift in Sources */,
 				A16F263A1ECBE0E0009AD2AF /* FakeMessageFactory.swift in Sources */,
-				A12B829D1ECAF3C900D22665 /* JZClientManager.swift in Sources */,
-				A12B829F1ECAF73A00D22665 /* NotificationName.swift in Sources */,
+				A16F26561ECBE983009AD2AF /* ViewController.swift in Sources */,
 				A16F26301ECBDF88009AD2AF /* TimeSeparatorPresenter.swift in Sources */,
-				A1710D801EC2F13800973E78 /* ViewController.swift in Sources */,
 				A16F26361ECBE083009AD2AF /* FakeMessageSender.swift in Sources */,
-				A18A7A2F1ECA9362009AEF6A /* JZLoginViewController.swift in Sources */,
 				A16F26251ECBDF88009AD2AF /* DemoPhotoMessageModel.swift in Sources */,
+				A16F26481ECBE92D009AD2AF /* JZNavigationViewController.swift in Sources */,
 				A16F263E1ECBE165009AD2AF /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */,
 				A16F26291ECBDF88009AD2AF /* SendingStatusPresenter.swift in Sources */,
-				A12B82A31ECAF9AA00D22665 /* JZNavigationViewController.swift in Sources */,
-				A1710D7E1EC2F13800973E78 /* AppDelegate.swift in Sources */,
 				A16F26381ECBE0CE009AD2AF /* BaseMessageHandler.swift in Sources */,
 				A16F262A1ECBDF88009AD2AF /* SlidingDatasSource.swift in Sources */,
 				A16F26261ECBDF88009AD2AF /* DemoPhotoMessageViewModel.swift in Sources */,
-				A12B82A11ECAF94100D22665 /* JZConversationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +538,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jiuzhangTest-001.IM---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IM客户端/BridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IM客户端/Other/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -538,7 +560,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jiuzhangTest-001.IM---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IM客户端/BridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IM客户端/Other/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

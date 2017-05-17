@@ -47,13 +47,17 @@ extension JZNavigationViewController : UINavigationControllerDelegate{
         
         if viewController.isKind(of: JZLoginViewController.superclass()!)
         {
-            navigationController.setNavigationBarHidden(true, animated: false)
+              //navigationController.setNavigationBarHidden(true, animated: false)
+            navigationBar.isHidden = true
+            
         }else
         {
-           navigationController.setNavigationBarHidden(false, animated: false)
+             //navigationController.setNavigationBarHidden(false, animated: false)
+            navigationBar.isHidden = false
         }
         
-        
+        print("\(navigationController)")
+        print("\(viewController)")
         
         
     }
