@@ -20,6 +20,8 @@ class JZLoginViewController: UIViewController {
 
     // MARK: IB outlets
     
+
+    
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var heading: UILabel!
     @IBOutlet var username: UITextField!
@@ -126,10 +128,49 @@ class JZLoginViewController: UIViewController {
         )
     }
     
-    // MARK: further methods
-    
+    // MARK: further method
     @IBAction func login() {
-        view.endEditing(true)
+       
+        JZClientManager.shared.connectToServer()
+
+        
+        let  initialCount = 0
+        let  pageSize = 50
+        
+        var dataSource: FakeDataSource!
+//        if segue.identifier == "0 messages" {
+//            initialCount = 0
+//        } else if segue.identifier == "2 messages" {
+//            initialCount = 2
+//        } else if segue.identifier == "10000 messages" {
+//            initialCount = 10000
+//        } else if segue.identifier == "overview" {
+//            dataSource = FakeDataSource(messages: TutorialMessageFactory.createMessages(), pageSize: pageSize)
+//        } else {
+//            assert(false, "segue not handled!")
+//        }
+        
+//        let chat2Controller = { () -> DemoChatViewController? in
+//            if let controller = segue.destination as? DemoChatViewController {
+//                return controller
+//            }
+//            if let tabController = segue.destination as? UITabBarController,
+//                let controller = tabController.viewControllers?.first as? DemoChatViewController {
+//                return controller
+//            }
+//            return nil
+//            }()!
+        
+        let chat2Controller = DemoChatViewController()
+        
+        if dataSource == nil {
+            dataSource = FakeDataSource(count: initialCount, pageSize: pageSize)
+        }
+        chat2Controller.dataSource = dataSource
+        chat2Controller.messageSender = dataSource.messageSender
+
+        navigationController?.pushViewController(chat2Controller, animated: true)
+        
     }
     
     // MARK: UITextFieldDelegate

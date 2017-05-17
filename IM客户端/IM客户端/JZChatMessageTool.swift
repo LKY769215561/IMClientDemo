@@ -15,17 +15,15 @@ class JZChatMessageTool {
     static  var clientSocket = GCDAsyncSocket()!
     
 
-    class func connectToServer() {
+//    class func connectToServer() {
+//    
+//       clientSocket.delegate = self
+//       clientSocket.delegateQueue = DispatchQueue.main
+//       try?  clientSocket.connect(toHost: "119.23.248.224", onPort: 9091)
+//        
+//    }
     
-       clientSocket.delegate = self
-       clientSocket.delegateQueue = DispatchQueue.main
-       try?  clientSocket.connect(toHost: "119.23.248.224", onPort: 9091)
-        
-    }
-    
-    class func disConnectToServer() {
-        clientSocket.disconnect()
-    }
+
     
     
     class func sendtext(text:String){

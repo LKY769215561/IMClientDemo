@@ -10,26 +10,52 @@ import UIKit
 
 class JZNavigationViewController: UINavigationController {
 
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+//        NSDictionary *style = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:18.0f]};
+//        [self.navigationBar setTitleTextAttributes:style];
+//        self.interactivePopGestureRecognizer.delegate = self;
+//        self.delegate = self;
+        
+       interactivePopGestureRecognizer?.delegate = self
+       delegate = self
+        
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension JZNavigationViewController : UIGestureRecognizerDelegate{
+
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+    
+}
+
+extension JZNavigationViewController : UINavigationControllerDelegate{
+
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        
+        viewController.view.backgroundColor = UIColor.white
+        
+        if viewController.isKind(of: JZLoginViewController.superclass()!)
+        {
+            navigationController.setNavigationBarHidden(true, animated: false)
+        }else
+        {
+           navigationController.setNavigationBarHidden(false, animated: false)
+        }
+        
+        
+        
+        
+    }
+}
+

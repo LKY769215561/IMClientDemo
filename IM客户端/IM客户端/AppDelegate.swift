@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         window = UIWindow(frame:UIScreen.main.bounds)
         
-        let storyBoard = UIStoryboard(name: "JZLoginViewController", bundle:Bundle.main)
-        window?.rootViewController = storyBoard.instantiateInitialViewController()
+        let rootVC = UIStoryboard(name: "JZLoginViewController", bundle:Bundle.main).instantiateInitialViewController()!
+        window?.rootViewController = JZNavigationViewController(rootViewController: rootVC)
         window?.makeKeyAndVisible()
         return true
     }

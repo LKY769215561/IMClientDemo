@@ -72,43 +72,10 @@ class ViewController: UIViewController {
 
 
 
-
-
-
-
 /// 代理
 extension ViewController : GCDAsyncSocketDelegate{
 
-    // 与服务器连接成功
-    func socket(_ clientSock: GCDAsyncSocket!, didConnectToHost host: String!, port: UInt16) {
-        
-        stateLable.text = "连接中.."
-        stateLable.backgroundColor = UIColor.green
-          //  保证能接收到数据
-        clientSock.readData(withTimeout: -1, tag: 0)
-        
-    }
-    
-    // 接收服务器响应的数据
-    func socket(_ clientSock: GCDAsyncSocket!, didRead data: Data!, withTag tag: Int) {
-       
 
-        let responStr = JZChatMessageTool.responServerData(serverData: data)
-        
-        
-        print("\(responStr)")
-        
-    
-        clientSock.readData(withTimeout: -1, tag: 0)
-        
-    }
-    
-    
-    // 与服务器连接断开
-    func socketDidDisconnect(_ sock: GCDAsyncSocket!, withError err: Error!) {
-        stateLable.text = "断开.."
-        stateLable.backgroundColor = UIColor.red
-    }
     
 
 }
