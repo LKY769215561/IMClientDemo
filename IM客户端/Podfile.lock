@@ -1,16 +1,25 @@
 PODS:
+  - Alamofire (4.4.0)
   - Chatto (3.0.1)
   - ChattoAdditions (3.0.1):
     - Chatto
+  - SVProgressHUD (2.1.2)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.4.0)
   - Chatto (= 3.0.1)
   - ChattoAdditions (= 3.0.1)
+  - SVProgressHUD (~> 2.1.2)
+  - SwiftyJSON (~> 3.1.4)
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   Chatto: 484273a793e06a33cef2f7e5b5b88a5a375df015
   ChattoAdditions: efd743b47dbd063eac824cd4bd94756cbf503f70
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: b86988fee39894f8059c564461fcaf7837b1bc9e
+PODFILE CHECKSUM: 9515e54d0301cce6cd87fdd8f46c3677d2f43ded
 
 COCOAPODS: 1.2.1.beta.1

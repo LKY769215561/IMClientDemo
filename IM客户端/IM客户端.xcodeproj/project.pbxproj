@@ -42,6 +42,10 @@
 		A1710D881EC2F13800973E78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1710D861EC2F13800973E78 /* LaunchScreen.storyboard */; };
 		A1710D941EC2F24F00973E78 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A1710D931EC2F24F00973E78 /* GCDAsyncSocket.m */; };
 		A18A7A331ECA9923009AEF6A /* JZLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18A7A321ECA9923009AEF6A /* JZLoginViewController.storyboard */; };
+		A1BA3D141ED27EC60039BD38 /* JZNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3D131ED27EC60039BD38 /* JZNetworkTool.swift */; };
+		A1BA3D161ED289E80039BD38 /* JZProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3D151ED289E80039BD38 /* JZProgressHUD.swift */; };
+		A1BA3D181ED291FF0039BD38 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3D171ED291FF0039BD38 /* SweetAlert.swift */; };
+		A1BA3D1C1ED29C4F0039BD38 /* JZNetDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3D1B1ED29C4F0039BD38 /* JZNetDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,10 @@
 		A1710D921EC2F24F00973E78 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		A1710D931EC2F24F00973E78 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		A18A7A321ECA9923009AEF6A /* JZLoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JZLoginViewController.storyboard; sourceTree = "<group>"; };
+		A1BA3D131ED27EC60039BD38 /* JZNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZNetworkTool.swift; sourceTree = "<group>"; };
+		A1BA3D151ED289E80039BD38 /* JZProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZProgressHUD.swift; sourceTree = "<group>"; };
+		A1BA3D171ED291FF0039BD38 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
+		A1BA3D1B1ED29C4F0039BD38 /* JZNetDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZNetDataModel.swift; sourceTree = "<group>"; };
 		C138B019946BB478C41F339C /* Pods-IM客户端.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM客户端.release.xcconfig"; path = "Pods/Target Support Files/Pods-IM客户端/Pods-IM客户端.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,8 +177,12 @@
 		A16F263F1ECBE92D009AD2AF /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A1BA3D171ED291FF0039BD38 /* SweetAlert.swift */,
 				A16F26401ECBE92D009AD2AF /* JZChatMessageTool.swift */,
 				A16F26411ECBE92D009AD2AF /* JZClientManager.swift */,
+				A1BA3D131ED27EC60039BD38 /* JZNetworkTool.swift */,
+				A1BA3D151ED289E80039BD38 /* JZProgressHUD.swift */,
+				A1BA3D1B1ED29C4F0039BD38 /* JZNetDataModel.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -380,6 +392,8 @@
 				A1710D941EC2F24F00973E78 /* GCDAsyncSocket.m in Sources */,
 				A16F26451ECBE92D009AD2AF /* JZChatMessageTool.swift in Sources */,
 				A16F262E1ECBDF88009AD2AF /* TimeSeparatorCollectionViewCell.swift in Sources */,
+				A1BA3D1C1ED29C4F0039BD38 /* JZNetDataModel.swift in Sources */,
+				A1BA3D181ED291FF0039BD38 /* SweetAlert.swift in Sources */,
 				A16F262F1ECBDF88009AD2AF /* TimeSeparatorModel.swift in Sources */,
 				A16F262C1ECBDF88009AD2AF /* DemoTextMessageModel.swift in Sources */,
 				A16F26541ECBE983009AD2AF /* NotificationName.swift in Sources */,
@@ -397,11 +411,13 @@
 				A16F26301ECBDF88009AD2AF /* TimeSeparatorPresenter.swift in Sources */,
 				A16F26361ECBE083009AD2AF /* FakeMessageSender.swift in Sources */,
 				A16F26251ECBDF88009AD2AF /* DemoPhotoMessageModel.swift in Sources */,
+				A1BA3D161ED289E80039BD38 /* JZProgressHUD.swift in Sources */,
 				A16F26481ECBE92D009AD2AF /* JZNavigationViewController.swift in Sources */,
 				A16F263E1ECBE165009AD2AF /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */,
 				A16F26291ECBDF88009AD2AF /* SendingStatusPresenter.swift in Sources */,
 				A16F26381ECBE0CE009AD2AF /* BaseMessageHandler.swift in Sources */,
 				A16F262A1ECBDF88009AD2AF /* SlidingDatasSource.swift in Sources */,
+				A1BA3D141ED27EC60039BD38 /* JZNetworkTool.swift in Sources */,
 				A16F26261ECBDF88009AD2AF /* DemoPhotoMessageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

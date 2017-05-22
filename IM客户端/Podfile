@@ -6,8 +6,10 @@ target 'IM客户端' do
 
     pod 'Chatto', '= 3.0.1'
     pod 'ChattoAdditions', '= 3.0.1'
+    pod 'Alamofire', '~> 4.4.0'
+    pod 'SwiftyJSON', '~> 3.1.4'
+    pod 'SVProgressHUD', '~> 2.1.2'
 
-
-
+#    pod 'EFSweetAlert', '~> 0.5.0'
 
 end

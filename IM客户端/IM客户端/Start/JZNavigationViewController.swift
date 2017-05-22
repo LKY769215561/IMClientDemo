@@ -58,8 +58,6 @@ extension JZNavigationViewController : UINavigationControllerDelegate{
         
         print("\(navigationController)")
         print("\(viewController)")
-        
-        
     }
 }
 

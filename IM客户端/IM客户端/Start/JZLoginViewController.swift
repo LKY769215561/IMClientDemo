@@ -131,6 +131,45 @@ class JZLoginViewController: UIViewController {
     // MARK: further method
     @IBAction func login() {
        
+        
+        if (username.text! as NSString).length == 0 ||
+          (password.text! as NSString).length == 0
+        {
+            JZProgressHUD.basicMessageAlert(title: "账户或密码不能为空!")
+            return
+        }
+        
+        guard let account = username.text else {
+             JZProgressHUD.basicMessageAlert(title: "账户不能为空!")
+            return
+        }
+        guard let password = password.text else {
+             JZProgressHUD.basicMessageAlert(title: "密码不能为空!")
+            return
+        }
+        
+        let loginURL = BASE_URL.appending("/login?phone=\(account)&password=\(password)")
+
+        JZNetworkTool.shareNetworkTool.get(loginURL, params: nil, success: { (json) in
+            
+            print(json)
+            
+            let msg = (json.dictionary?["msg"])?.string
+            
+            guard let message = msg else
+            {
+              return
+            }
+            
+            JZProgressHUD.showSuccessWithStatus(message)
+            
+            
+        }) { (error) in
+              print(error)
+        }
+        
+        
+        
         JZClientManager.shared.connectToServer()
 
         
@@ -178,6 +217,12 @@ class JZLoginViewController: UIViewController {
         
     }
     
+ 
+    @IBAction func register(_ sender: Any) {
+        
+        JZProgressHUD.showSuccessWithStatus("注册成功")
+        
+    }
     // MARK: UITextFieldDelegate
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
